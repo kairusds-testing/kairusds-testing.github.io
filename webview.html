@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WebView</title>
+	</head>
+	<body style="text-align: center;">
+		<h1>WebView Javascript Interface Test</h1>
+		<button onclick="sayHi()">Say Hi to Android</button>
+
+		<script type="text/javascript">
+			function sayHi(){
+				if(typeof Android === "undefined") return;
+				Android.showSnackbar("Hi!");
+			}
+		</script>
+	</body>
+</html>
